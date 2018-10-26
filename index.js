@@ -8,7 +8,8 @@ const productsRouter = require('./server/routers/productsRouter');
 const indexRouter = require('./server/routers/indexRouter');
 const port = 3300;
 
-app.set('views', path.join(__dirname, 'server/views'));
+app.set('views', path.join(__dirname, 'server/views/'));
+//app.set('views', path.join(__dirname, 'server/views/sample'));
 app.set('view engine', 'pug');
 
 app.use(morgan('dev'));

@@ -1,0 +1,165 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Our Online Store
+  // Bootstrap
+  link(href='css/bootstrap-4.0.0.css' rel='stylesheet')
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  .container
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active  
+        li.nav-item.dropdown
+      form.form-inline.my-2.my-lg-0
+        input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+.container.mt-3
+  .row
+    .col-12
+      #carouselExampleControls.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleControls' data-slide-to='0')
+          li(data-target='#carouselExampleControls' data-slide-to='1')
+          li(data-target='#carouselExampleControls' data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100.img-fluid(src='images/logo.png' alt='First slide' width='1920' height='500')
+          .carousel-item
+            img.d-block.w-100.img-fluid(src='images/banner.gif' alt='Second slide' width='1727' height='500')
+            .carousel-caption.d-none.d-md-block
+              h5
+              p
+          .carousel-item
+            img.d-block.w-100.img-fluid(src='images/shop_banner1.jpg' alt='Third slide' width='1648' height='500')
+            .carousel-caption.d-none.d-md-block
+              h5
+              p
+        a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+  hr
+.container
+  .row
+    .col-4
+      .row
+        .col-2
+          img.rounded-circle(src='images/shipping.png' alt='Free Shipping' width='40' height='40')
+        .col-lg-6.col-10.ml-1
+          h4 Free Shipping
+    .col-4
+      .row
+        .col-2
+          img.rounded-circle(src='images/returns.png' alt='Free Shipping' width='40' height='40')
+        .col-lg-6.col-10.ml-1
+          h4 Free Returns
+    .col-4
+      .row
+        .col-2
+          img.rounded-circle(src='images/lowprices.jpg' alt='Free Shipping' width='40' height='40')
+        .col-lg-6.col-10.ml-1
+          h4 Low Prices
+hr
+h2.text-center FEATURED PRODUCTS
+hr
+.container
+  .row.text-center
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/kd11.jpg' alt='Card image cap' width='400' height='200')
+        .card-body
+          h5.card-title KD 11
+          p.card-text
+            | Basketball
+            | Shoes
+            br
+            | &#x9;&#x9;&#x9;                          Php 5,000.00
+          a.btn.btn-primary(href='#') Add to Cart
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/jersey.jpg' alt='Card image cap' width='400' height='200')
+        .card-body
+          h5.card-title Chealsea FC Jersey
+          p.card-text
+            | Chealsea Football Club Jersey
+            br
+            | Php 7,000.00
+          a.btn.btn-primary(href='#') Add to Cart
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/ball.png' alt='Card image cap' width='400' height='200')
+        .card-body
+          h5.card-title Molten GG6X
+          p.card-text
+            | Molten Indoor Basketball
+            br
+            | Php 2,000.00
+          a.btn.btn-primary(href='#') Add to Cart
+  .row.text-center.mt-4
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/cap.jfif' alt='Card image cap' width='400' height='200')
+        .card-body
+          h5.card-title New Era Baseball Cap
+          p.card-text
+            | Golden State Warriors Baseball Cap By New Era
+            br
+            | Php 3,500.00
+          a.btn.btn-primary(href='#') Add to Cart
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/weights.jpg' alt='Card image cap' width='400' height='200')
+        .card-body
+          h5.card-title Marcy Weights
+          p.card-text
+            | Marcy standard cast iron weights 50Kg
+            br
+            | Php 8,000.00
+          a.btn.btn-primary(href='#') Add to Cart
+    .col-md-4.pb-1.pb-md-0
+      .card
+        img.card-img-top.img-fluid(src='images/supplements.png' alt='Card image cap' width='141' height='200')
+        .card-body
+          h5.card-title Musclepharm Supplement
+          p.card-text
+            | Musclepharm Combat Protein Powder
+            br
+            | Php 4,000.00
+          a.btn.btn-primary(href='#') Add to Cart
+hr
+hr
+.container
+  .row  
+hr
+.container.text-white.bg-dark.p-4
+  .row
+    .col-6.col-md-8.col-lg-7
+      .row.text-center
+        p
+          font(size='20' color='black') CONTACT US!
+    .col-md-4.col-lg-5.col-6
+      address
+        strong Our Online Shop Inc.
+        |             Ortigas, Manila, PH
+        br
+        |  1608
+        br
+        abbr(title='Phone') P:
+        |  1011011 - 0110
+      address
+        a(href='mailto:#') Our.Online.Shop@gmail.com
+footer.text-center
+  .container
+    .row
+      .col-12
+// jQuery (necessary for Bootstrap's JavaScript plugins)
+script(src='js/jquery-3.2.1.min.js')
+// Include all compiled plugins (below), or include individual files as needed
+script(src='js/popper.min.js')
+script(src='js/bootstrap-4.0.0.js')
