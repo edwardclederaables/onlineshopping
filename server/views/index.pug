@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title
+
+    link(rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+
+  body
+    main#onlineShopVue(role="main" class="container")
+      h1#pageTitle 
+       nav.navbar.navbar-dark.bg-dark(style="color:white; font-family:bold;") TLGS Online Shop |
+      
+
+      form#addProductForm(action="/" method="POST")
+        .form-group
+          label Product Name
+          input.form-control#name(type="text"
+            name="name" v-model="name" )
+        .form-group
+          label Price
+          input.form-control#price(type="text"
+            name="price" v-model="price")
+        .form-group
+          label Description
+          textarea.form-control#description(rows="3"
+            name="description" v-model="description")
+        .form-group
+          label Quantity
+          input.form-control#quantity(type="number"
+            name="quantity" v-model="quantity" style="width:100px;")
+        .form-group
+          button.btn.btn-success(type="button"
+            v-on:click="addProduct") Submit
+          | &nbsp; 
+          button.btn#clearBtn(type="button"
+            v-on:click="clear") Clear
+      h1 List of Products
+      section
+        table.table#productsTable
+          tr
+            th Product ID
+            th Name
+            th Price
+            th Description
+            th Quantity
+            th Actions
+          tr(v-for="product in products")
+            td {{ product.id }}
+            td {{ product.name }}
+            td {{ product.price }}
+            td {{ product.description }}
+            td {{ product.quantity }}
+            td
+              button.btn.btn-primary.span(v-on:click="editProducts(product)") Edit
+              | &nbsp; 
+              button.btn.btn-danger(v-on:click="deleteProduct(product)") Delete
+          
+    script(src="/axios.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    script(src="/onlineshop-vue.js")

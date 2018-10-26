@@ -1,0 +1,25 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "asdasd",
+			"price": "asdasd",
+			"description": "asda",
+			"quantity": "23123"
+		},
+		{
+			"id": 2,
+			"name": "Bench & Bath",
+			"price": "80",
+			"description": "Towel",
+			"quantity": "100"
+		},
+		{
+			"id": 3,
+			"name": "Bench & Bath",
+			"price": "80",
+			"description": "Towel",
+			"quantity": "100"
+		}
+	]
+}
